@@ -70,11 +70,11 @@
           </ul>
         </div>
         <div class="navbar-end space-x-6">
-          <div class="space-x-3 lg:block sm:hidden md:hidden">
+          <div class="space-x-3 lg:block sm:hidden md:hidden max-sm:hidden">
             <a href> <i class="fas fa-shopping-cart"></i></a>
             <a href><i class="fa-solid fa-magnifying-glass"></i></a>
           </div>
-          <div class="space-x-3 lg:block  sm:hidden md:hidden">
+          <div class="space-x-3 lg:block  sm:hidden md:hidden max-sm:hidden ">
             <a class="btn text-black btn-outline btn-sm   ">Login</a>
             <a class="btn bg-green-500 btn-sm text-white  ">Register</a>
           </div>
@@ -132,11 +132,13 @@
       <section>
         <div class="  Services-Container">
           <div>
-            <h1 class="ml-5 md:ml-20 my-10   text-4xl font-semibold text-green-600">
+            <h1
+              class="ml-5 md:ml-20 my-10   text-4xl font-semibold text-green-600">
               Services
             </h1>
           </div>
-          <div class="grid grid-cols-1 mx-5 md:grid-cols-3 md:mx-20  justify-center gap-5">
+          <div
+            class="grid grid-cols-1 mx-5 md:grid-cols-3 md:mx-20  justify-center gap-5">
             <div class="card bg-secondary-color   shadow-xl">
               <figure>
                 <img class="mt-10 " src="./c2-assets/service.png" alt="Shoes" />
@@ -183,249 +185,218 @@
         </div>
       </section>
       <!-- Popular Products -->
-      <section class="bg-secondary-color pb-20  ">
-        <div class="">
-          <h1 class="pt-8 ml-20 my-10 font-bold text-4xl text-green-600">Popular
-            Products</h1>
-        </div>
-        <div class=" md:flex mx-5 items-center ">
+      <section >
 
-          <div
-            class=" card shadow-xl bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF]">
-
-            <div class=" ml-10 mt-5 relative ">
-              <div> <h1 class="text-4xl text-white font-bold animate-pulse mb-5 ">30%
-                  off</h1></div>
-              <div><p class="text-base mb-4 ">
-                  Discover a world of treats,toys,and<br> essentials handpicked
-                  for
-                </p></div>
-              <button class="btn bg-white px-4 py-2">Buy Now</button>
-              <div class="-mt-16 ml-24 ">
-                <img class src="./c2-assets/vegetable-offer.png" alt>
-              </div>
-
-            </div>
-
+        <div class=" bg-secondary-color mt-10 pb-20   ">
+          <div class="text-4xl font-bold text-green-600 md:container m-auto  ">
+            <h1 class="py-10 ml-5  lg:ml-5">Popular Products</h1>
           </div>
-          <div class="grid grid-cols-2 gap-5 my-10   md:ml-5   md:w-9/12 ">
+          <div class=" container m-auto lg:ml-10  sm:flex-row md:flex-row lg:flex  ">
 
-            <div class="card bg-base-100 md:w-60 h-28 shadow-xl  ">
-              
-              <div class="flex justify-start my-auto ">
-                <div>
-                  <img class="ml-5 bg-secondary-color rounded-xl  "
-                    src="./c2-assets/onion.png" alt>
-                </div>
-                <div class="ml-5">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      class="mask mask-star-2 bg-orange-400" />
-                    4.5
-
-                  </div>
-                  <div>
-                    <h2>Onion 1 KG</h2>
-                    <p>$39.99</p>
-                  </div>
-                </div>
+            <div
+              class=" card shadow-xl bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF]   ">
+              <h1 class="text-4xl font-bold m-8 text-white">30% Off</h1>
+              <p class="text-base ml-10 mb-5">Discover a world of
+                treats,toys,and<br>
+                essential handpicked for
+              </p>
+              <div>
+                <button><a class=" btn btn-sm ml-10   text-black">Buy
+                    Now</a></button>
               </div>
 
+              <div class="-mt-24 ml-36">
+                <img src="./c2-assets/vegetable-offer.png"
+                  alt>
+              </div>
             </div>
 
-            <!--  -->
-            <div class="card bg-base-100 md:w-60 h-28 shadow-xl ">
-              <div class="flex justify-start my-auto  ">
+            <!-- items -->
+            <div
+              class="  ml-5 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3   gap-3  ">
+              <div
+                class="bg-white p-4 rounded-2xl shadow-md flex items-center space-x-4 lg:w-64   max-sm:hidden">
+                <img class="bg-secondary-color rounded-xl"
+                  src="./c2-assets/onion.png" alt="Onion">
                 <div>
-                  <img class="ml-5 bg-secondary-color rounded-xl"
-                    src="./c2-assets/tomato.png" alt>
-                </div>
-                <div class="ml-5">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      class="mask mask-star-2 bg-orange-400" />4.5
+                  <div class="  space-x-1">
+                    <div class="rating">
+                      <input type
+                        class="mask mask-star-2 bg-orange-400" />
 
+                    </div>
+                    <span class=" font-semibold">4.5</span>
                   </div>
-                  <div>
-                    <h2>tomato 1 KG</h2>
-                    <p>$30.99</p>
-                  </div>
+                  <h2 class="text-lg font-bold">Onion 1KG</h2>
+                  <p class="text-gray-600 text-md font-semibold">$39.99</p>
                 </div>
               </div>
-
-            </div>
-            <!--  -->
-            <div class="card bg-base-100 md:w-60 h-28 shadow-xl ">
-              <div class="flex justify-start my-auto  ">
+              <!--  -->
+              <div
+                class="bg-white p-4 rounded-2xl shadow-md flex items-center space-x-4 lg:w-64  ">
+                <img class="bg-secondary-color rounded-xl"
+                  src="./c2-assets/tomato.png" alt="tomato">
                 <div>
-                  <img class="ml-5 bg-secondary-color rounded-xl"
-                    src="./c2-assets/potato.png" alt>
-                </div>
-                <div class="ml-5">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      class="mask mask-star-2 bg-orange-400" />4.5
+                  <div class="flex items-center space-x-1">
+                    <div class="rating">
+                      <input type
+                        class="mask mask-star-2 bg-orange-400" />
 
+                    </div>
+                    <span class=" font-semibold">4.5</span>
                   </div>
-                  <div>
-                    <h2>potato 1 KG</h2>
-                    <p>$35.99</p>
-                  </div>
+                  <h2 class="text-lg font-bold">tomato 1KG</h2>
+                  <p class="text-gray-600 text-md font-semibold">$30.99</p>
                 </div>
               </div>
-
-            </div>
-            <!--  -->
-            <div class="card bg-base-100 md:w-60 h-28 shadow-xl ">
-              <div class="flex justify-start my-auto  ">
+              <!--  -->
+              <div
+                class="bg-white p-4 rounded-2xl shadow-md flex items-center space-x-4 lg:w-64 ">
+                <img class="bg-secondary-color rounded-xl"
+                  src="./c2-assets/potato.png" alt="potato">
                 <div>
-                  <img class="ml-5 bg-secondary-color rounded-xl"
-                    src="./c2-assets/tomato.png" alt>
-                </div>
-                <div class="ml-5">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      class="mask mask-star-2 bg-orange-400" />4.5
+                  <div class="flex items-center space-x-1">
+                    <div class="rating">
+                      <input type
+                        class="mask mask-star-2 bg-orange-400" />
 
+                    </div>
+                    <span class=" font-semibold">4.5</span>
                   </div>
-                  <div>
-                    <h2>tomato 1 KG</h2>
-                    <p>$30.99</p>
-                  </div>
+                  <h2 class="text-lg font-bold">potato 1KG</h2>
+                  <p class="text-gray-600 text-md font-semibold">$25.99</p>
                 </div>
               </div>
-
-            </div>
-            <!--  -->
-            <div class="card bg-base-100 md:w-60 h-28 shadow-xl ">
-              <div class="flex justify-start my-auto  ">
+              <!--  -->
+              <div
+                class="bg-white p-4 rounded-2xl shadow-md flex items-center space-x-4 lg:w-64  ">
+                <img class="bg-secondary-color rounded-xl"
+                  src="./c2-assets/onion.png" alt="Onion">
                 <div>
-                  <img class="ml-5 bg-secondary-color rounded-xl"
-                    src="./c2-assets/potato.png" alt>
-                </div>
-                <div class="ml-5">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      class="mask mask-star-2 bg-orange-400" />4.5
+                  <div class="flex  items-center space-x-1">
+                    <div class="rating">
+                      <input type
+                        class="mask mask-star-2 bg-orange-400" />
 
+                    </div>
+                    <span class=" font-semibold">4.5</span>
                   </div>
-                  <div>
-                    <h2>potato 1 KG</h2>
-                    <p>$35.99</p>
-                  </div>
+                  <h2 class="text-lg font-bold">Onion 1KG</h2>
+                  <p class="text-gray-600 text-md font-semibold">$39.99</p>
                 </div>
               </div>
-
-            </div>
-            <!--  -->
-            <div class="card bg-base-100 md:w-60 h-28 shadow-xl ">
-              <div class="flex justify-start my-auto  ">
+              <!--  -->
+              <div
+                class="bg-white p-4 rounded-2xl shadow-md flex items-center space-x-4  lg:w-64 ">
+                <img class="bg-secondary-color rounded-xl"
+                  src="./c2-assets/tomato.png" alt="tomato">
                 <div>
-                  <img class="ml-5 bg-secondary-color rounded-xl"
-                    src="./c2-assets/onion.png" alt>
-                </div>
-                <div class="ml-5">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      class="mask mask-star-2 bg-orange-400" />4.5
+                  <div class="flex items-center space-x-1">
+                    <div class="rating">
+                      <input type
+                        class="mask mask-star-2 bg-orange-400" />
 
+                    </div>
+                    <span class=" font-semibold">4.5</span>
                   </div>
-                  <div>
-                    <h2>Onion 1 KG</h2>
-                    <p>$39.99</p>
-                  </div>
+                  <h2 class="text-lg font-bold">tomato 1KG</h2>
+                  <p class="text-gray-600 text-md font-semibold">$30.99</p>
                 </div>
               </div>
-
-            </div>
-            <!--  -->
-            <div class="card bg-base-100 md:w-60 h-28 shadow-xl ">
-              <div class="flex justify-start my-auto  ">
+              <!--  -->
+              <div
+                class="bg-white p-4 rounded-2xl shadow-md flex items-center space-x-4 lg:w-64 ">
+                <img class="bg-secondary-color rounded-xl"
+                  src="./c2-assets/potato.png" alt="potato">
                 <div>
-                  <img class="ml-5 bg-secondary-color rounded-xl"
-                    src="./c2-assets/onion.png" alt>
-                </div>
-                <div class="ml-5">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      class="mask mask-star-2 bg-orange-400" />4.5
+                  <div class="flex items-center space-x-1">
+                    <div class="rating">
+                      <input type
+                        class="mask mask-star-2 bg-orange-400" />
 
+                    </div>
+                    <span class=" font-semibold">4.5</span>
                   </div>
-                  <div>
-                    <h2>Onion 1 KG</h2>
-                    <p>$39.99</p>
-                  </div>
+                  <h2 class="text-lg font-bold">potato 1KG</h2>
+                  <p class="text-gray-600 text-md font-semibold">$25.99</p>
                 </div>
               </div>
-
-            </div>
-            <!--  -->
-            <div class="card bg-base-100 md:w-60 h-28 shadow-xl ">
-              <div class="flex justify-start my-auto  ">
+              <!--  -->
+              <div
+                class="bg-white p-4 rounded-2xl shadow-md flex items-center space-x-4 lg:w-64 ">
+                <img class="bg-secondary-color rounded-xl"
+                  src="./c2-assets/onion.png" alt="Onion">
                 <div>
-                  <img class="ml-5 bg-secondary-color rounded-xl"
-                    src="./c2-assets/tomato.png" alt>
-                </div>
-                <div class="ml-5">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      class="mask mask-star-2 bg-orange-400" />4.5
+                  <div class="flex items-center space-x-1">
+                    <div class="rating">
+                      <input type
+                        class="mask mask-star-2 bg-orange-400" />
 
+                    </div>
+                    <span class=" font-semibold">4.5</span>
                   </div>
-                  <div>
-                    <h2>tomato 1 KG</h2>
-                    <p>$30.99</p>
-                  </div>
+                  <h2 class="text-lg font-bold">Onion 1KG</h2>
+                  <p class="text-gray-600 text-md font-semibold">$39.99</p>
                 </div>
               </div>
-
-            </div>
-            <!--  -->
-            <div class="card bg-base-100 md:w-60 h-28 shadow-xl ">
-              <div class="flex justify-start my-auto  ">
+              <!--  -->
+              <div
+                class="bg-white p-4 rounded-2xl shadow-md flex items-center space-x-4 lg:w-64 ">
+                <img class="bg-secondary-color rounded-xl"
+                  src="./c2-assets/tomato.png" alt="tomato">
                 <div>
-                  <img class="ml-5 bg-secondary-color rounded-xl"
-                    src="./c2-assets/potato.png" alt>
-                </div>
-                <div class="ml-5">
-                  <div class="rating">
-                    <input
-                      type="radio"
-                      class="mask mask-star-2 bg-orange-400" />4.5
+                  <div class="flex items-center space-x-1">
+                    <div class="rating">
+                      <input type
+                        class="mask mask-star-2 bg-orange-400" />
 
+                    </div>
+                    <span class=" font-semibold">4.5</span>
                   </div>
-                  <div>
-                    <h2>potato 1 KG</h2>
-                    <p>$35.99</p>
+                  <h2 class="text-lg font-bold">tomato 1KG</h2>
+                  <p class="text-gray-600 text-md font-semibold">$30.99</p>
+                </div>
+              </div>
+              <!--  -->
+              <div
+                class="bg-white p-4 rounded-2xl shadow-md flex items-center space-x-4 lg:w-64 ">
+                <img class="bg-secondary-color rounded-xl"
+                  src="./c2-assets/potato.png" alt="potato">
+                <div>
+                  <div class="flex items-center space-x-1">
+                    <div class="rating">
+                      <input type
+                        class="mask mask-star-2 bg-orange-400" />
+
+                    </div>
+                    <span class=" font-semibold">4.5</span>
                   </div>
+                  <h2 class="text-lg font-bold">potato 1KG</h2>
+                  <p class="text-gray-600 text-md font-semibold">$25.99</p>
                 </div>
               </div>
 
             </div>
 
           </div>
+
         </div>
 
       </section>
 
       <!--  Arrival & Offers-->
-      <section class="font-poppins ml-20">
-        <h2 class=" my-10 font-bold text-4xl text-green-600">Arrival &
+      <section class="font-poppins container m-auto ">
+        <h2
+          class=" my-10 font-bold text-4xl text-green-600 sm:ml-5 md:ml-20 lg:ml-10 ">Arrival
+          &
           Offers</h2>
-        <div class="flex gap-5 m-auto">
+        <div
+          class="  grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-5  m-auto">
           <div class="bg-[#115414] rounded-xl">
 
-            <div class="flex items-center ml-10 ">
+            <div class="flex items-center  ml-10 ">
 
-              <div class>
+              <div class=" w-8/12">
                 <img src="./c2-assets/dawat-logo.png" alt>
 
                 <button
@@ -437,16 +408,16 @@
                     20% OFF</span></p>
               </div>
               <div>
-                <img class="mt-10" src="./c2-assets/dawat-mock-up.png" alt>
+                <img class="mt-10 " src="./c2-assets/dawat-mock-up.png" alt>
               </div>
             </div>
 
           </div>
           <!--  -->
           <div class=" bg-[#102861] rounded-xl">
-            <div class="flex items-center ml-10">
+            <div class="flex items-center ml-10 ">
 
-              <div class>
+              <div class=" w-8/12">
                 <img src="./c2-assets/india-gate-logo.png" alt>
 
                 <button
@@ -457,7 +428,7 @@
                     20% OFF</span></p>
               </div>
               <div>
-                <img class="mt-10 pr-5" src="./c2-assets/india-gate-mock-up.png"
+                <img class="mt-10 " src="./c2-assets/india-gate-mock-up.png"
                   alt>
               </div>
             </div>
@@ -475,7 +446,7 @@
         <div class="hero-content flex-col lg:flex-row">
           <img src="./c2-assets/vegetable-busket.png"
             class="max-w-sm rounded-lg " />
-          <div>
+          <div class="sm:text-center md:text-center lg:text-start ">
             <h1 class="text-5xl font-bold">Get Grocery News!</h1>
             <p class="py-6">Exclusive training tips, ticks, product deals and
               more.</p>
@@ -487,14 +458,14 @@
         </div>
       </div>
       <!--  -->
-      <footer class="footer  bg-green-600 text-base-content p-48  ">
-        <nav class>
+      <footer class="footer  bg-green-700 text-base-content pt-48 pb-10    ">
+        <nav class="ml-10 lg:ml-28">
           <header class="footer-title"><img src="./c2-assets/logo-footer.png"
               alt></header>
           <p class="text-white">Discover a world of treats, toys, and<br>
             essentials handpicked for your furry<br> friends</p>
         </nav>
-        <nav class="text-white">
+        <nav class="text-white ml-10">
 
           <a class="link link-hover">Product</a>
           <a class="link link-hover"></a>
@@ -503,7 +474,7 @@
           <a class="link link-hover">Contact us</a>
 
         </nav>
-        <nav>
+        <nav class="ml-10">
           <header class="footer-title text-white font-medium ">Follow
             Us</header>
           <div class="mt-4 lg:mt-0 flex space-x-3">
